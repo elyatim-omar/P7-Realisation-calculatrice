@@ -5,19 +5,20 @@
   #container{
       text-align: center;
       
+      
   }
   #case{
-      height: 120px;
-      width: 210px;
+      height: 150px;
+      width: 370px;
       border: 2px solid #000000;
-      font-size: large;
+      font-size: 35px;
       
   }
 
   .number{
-      height: 50px;
-      width: 50px;
-      font-size: 25px;
+      height: 90px;
+      width: 90px;
+      font-size: 35px;
       color: white;
       border: 2px solid #414141;
      
@@ -28,9 +29,9 @@
   }
 
   .operator{
-      height: 50px;
-      width: 50px;
-      font-size: 25px;
+      height: 90px;
+      width: 90px;
+      font-size: 35px;
       color: white;
       border: 2px solid #414141;
       
@@ -41,9 +42,9 @@
   }
 
   .equal{
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
+    height: 90px;
+    width: 90px;
+    font-size: 35px;
     color: rgb(0, 0, 0);
     border: 2px solid #ffee00;
     
@@ -54,9 +55,7 @@
 }
 
 #button-C , #button-- , #button- {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
+   
     color: white;
     border: 2px solid #ae00ff;
     
@@ -64,4 +63,37 @@
 }
 #button-C:hover , #button--:hover , #button-:hover{
     background-color: #d467ff;
+}
+@media only screen and (max-width: 768px) {
+    #case{
+        height: 120px;
+        width: 220px;
+        font-size: 20px;
+        
+    }
+  
+    .number{
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+       
+    }
+   
+  
+    .operator{
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+
+    }
+    .operator:hover{
+        background-color: #6b6b6b;
+    }
+  
+    .equal{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+ 
+  }
 }

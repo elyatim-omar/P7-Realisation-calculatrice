@@ -93,31 +93,82 @@ if(isset($_POST['init'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <title>calculatrice</title>
 </head>
 <body>
+<div id="container">
+<center>
 <form action="" method="post">
 <input type="hidden" name="x" value="<?php echo $x ?>">
 <input type="hidden" name="y" value="<?php echo $y ?>">
 <input type="hidden" name="operation" value="<?php echo $operation ?>">
-<input type="text"  name="affichage" value="<?php echo $afficheur ?>">
-<input type="submit" name="nombre" value="1">
-<input type="submit" name="nombre" value="2">
-<input type="submit" name="nombre" value="3">
-<input type="submit" name="nombre" value="4">
-<input type="submit" name="nombre" value="5">
-<input type="submit" name="nombre" value="6">
-<input type="submit" name="nombre" value="7">
-<input type="submit" name="nombre" value="8">
-<input type="submit" name="nombre" value="9">
-<input type="submit" name="nombre" value="0">
-<input type="submit" name="operation" value="+">
-<input type="submit" name="operation" value="-">
-<input type="submit" name="operation" value="x">
-<input type="submit" name="operation" value="/">
-<input type="submit" name="egale" value="=">
-<input type="submit" name="init" value="C">
+<input id="case" type="text"  name="affichage" value="<?php echo $afficheur ?>">
+
+<table>
+       <tr>
+         <td>
+<input class="number" type="submit" name="nombre" value="1">
+</td>
+         <td>
+<input class="number" type="submit" name="nombre" value="2">
+</td>
+<td>
+<input class="number" type="submit" name="nombre" value="3">
+</td>
+<td>
+<input class="operator" id="button-C"  type="submit" name="init" value="C">
+</td>
+</tr>
+
+<tr>
+<td>
+<input class="number" type="submit" name="nombre" value="4">
+</td>
+<td>
+<input class="number" type="submit" name="nombre" value="5">
+</td>
+<td>
+<input class="number" type="submit" name="nombre" value="6">
+</td>
+<td>
+<input class="operator" id="button-"   type="submit" name="operation" value="+">
+</td>
+</tr>
+
+<tr>
+    <td>        
+<input class="number" type="submit" name="nombre" value="7">
+</td>
+<td>
+<input class="number"  type="submit" name="nombre" value="8">
+</td>
+<td>
+<input class="number"  type="submit" name="nombre" value="9">
+</td>
+<td>
+<input class="operator" id="button--"   type="submit" name="operation" value="-">
+</td>
+</tr>
+<tr>
+<td>
+<input class="operator"  type="submit" name="operation" value="x">
+</td>
+         <td>
+<input class="number" type="submit" name="nombre" value="0">
+</td>
+<td>
+<input class="operator"  type="submit" name="operation" value="/">
+</td>
+<td>
+<input class="equal" type="submit" name="egale" value="=">
+</td>
+       </tr>
+
+     </table>
+
 </form>
-    
+</center>
+</div>
 </body>
 </html>
